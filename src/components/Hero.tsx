@@ -38,16 +38,7 @@ export function Hero() {
             style={{ opacity }}
             className="text-white space-y-8"
           >
-            {/* Badge */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-5 py-2.5 rounded-full border border-white/20"
-            >
-              <Sparkles className="w-4 h-4 text-yellow-400" />
-              <span className="text-sm">Premium Development Services</span>
-            </motion.div>
+           
 
             {/* Main Heading */}
             <div className="space-y-6">

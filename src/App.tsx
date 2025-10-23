@@ -1,3 +1,4 @@
+
 import { Navigation } from './components/Navigation';
 import { Hero } from './components/Hero';
 import { Services } from './components/Services';
@@ -6,18 +7,21 @@ import { WhyChooseUs } from './components/WhyChooseUs';
 import { Testimonials } from './components/Testimonials';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
+import LocomotiveScrollProvider from './components/LocomotiveScrollProvider';
 
 export default function App() {
   return (
-    <div className="min-h-screen">
-      <Navigation />
-      <Hero />
-      <Services />
-      <Projects />
-      <WhyChooseUs />
-      <Testimonials />
-      <Contact />
-      <Footer />
-    </div>
+    <LocomotiveScrollProvider>
+      <div className="min-h-screen">
+        <Navigation />
+        <Hero />
+        <Services />
+        <Projects />
+        <WhyChooseUs />
+        <Testimonials />
+        <Contact />
+        <Footer />
+      </div>
+    </LocomotiveScrollProvider>
   );
 }
